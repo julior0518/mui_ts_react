@@ -1,4 +1,4 @@
-import { createTheme, Toolbar, styled, Box } from "@mui/material";
+import { createTheme, Toolbar, styled, Box, Card } from "@mui/material";
 
 export const theme = createTheme({
 
@@ -21,5 +21,10 @@ export const IconsNav = styled(Box)(({theme})=>({
     alignItems: "center",
     gap: "30px"
 }))
+
+export const CardStack = styled(Card)(({})=>({
+    margin:"10px 0"
+}))
+
 
 

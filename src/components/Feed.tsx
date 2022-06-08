@@ -1,5 +1,8 @@
 import {FC} from 'react'
-import {Typography, Box, IconButton, Card, CardActions, CardHeader, Avatar, CardMedia, CardContent} from '@mui/material'
+import { Post } from './a_index';
+import { CardStack } from '../theme'
+
+import {Typography, Box, IconButton, CardActions, CardHeader, Avatar, CardMedia, CardContent} from '@mui/material'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
@@ -10,8 +13,8 @@ interface IState {
 
 export const Feed: FC = () => {
     return (
-        <Box bgcolor="#A3CEF180" flex={4}  p={2} >
-            <Card >
+        <Box bgcolor="#A3CEF180" flex={4}  p={2} sx={{overflow:"auto", } }>
+            <CardStack sx={{margin:"10px 0"}} >
                 <CardHeader
                     avatar={
                     <Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
@@ -45,8 +48,8 @@ export const Feed: FC = () => {
                         <ShareIcon />
                     </IconButton>
                 </CardActions>
-            </Card>
-        
+            </CardStack>
+            <Post />
         </Box>
     )
 }
