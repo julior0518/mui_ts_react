@@ -1,7 +1,12 @@
-import React from 'react'
+import {FC} from 'react'
+import {Box} from '@mui/material'
 
-export const Feed = () => {
+interface IState {
+
+}
+
+export const Feed: FC = () => {
     return (
-        <div>Feed</div>
+        <Box bgcolor="blue">Feed</Box>
     )
 }

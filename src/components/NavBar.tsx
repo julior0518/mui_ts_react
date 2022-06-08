@@ -1,7 +1,13 @@
-import React from 'react'
+import {FC} from 'react'
+import {Box} from '@mui/material'
 
-export const NavBar = () => {
+interface IState {
+
+}
+
+
+export const NavBar:FC = () => {
     return (
-        <div>NavBar</div>
+        <Box bgcolor='yellow'>NavBar</Box>
     )
 }

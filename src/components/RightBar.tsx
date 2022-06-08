@@ -1,7 +1,12 @@
-import React from 'react'
+import {FC} from 'react'
+import {Box} from '@mui/material'
 
-export const RightBar = () => {
+interface IState {
+
+}
+
+export const RightBar: FC = () => {
     return (
-        <div>RightBar</div>
+        <Box bgcolor="green">RightBar</Box>
     )
 }
